@@ -67,32 +67,32 @@
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
                     <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail1" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
-                    <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
-                    <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_edit_detail1" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_delete" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
                     <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
-                    <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
-                    <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
+                    <td><a href="#"  data-bs-toggle="modal" data-bs-target="#employee_detail1" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_delete" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
                     <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
-                    <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
-                    <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
+                    <td><a href="#"  data-bs-toggle="modal" data-bs-target="#employee_detail1" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_delete" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
                     <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
-                    <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
-                    <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
+                    <td><a href="#"  data-bs-toggle="modal" data-bs-target="#employee_detail1" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_delete" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
 
 
@@ -143,7 +143,8 @@
             </div>
             </div>
         </div>
-        <!-- Details model-->
+       
+         <!-- Details model-->
         <div class="modal fade" id="employee_detail1" tabindex="-1" aria-labelledby="employee_detail1" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
@@ -181,7 +182,63 @@
             </div>
             </div>
         </div>
-        <!-- Details model-->
+        <!-- Details modal-->
+        <!-- Edit Employee details modal-->
+        <div class="modal fade" id="employee_edit_detail1" tabindex="-1" aria-labelledby="employee_edit_detail1" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="employee_edit_detail1">Employee Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" value="02-08-2021" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" value="John Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control form-control-sm" value="JohnDoe@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control form-control-sm" value="1233454567" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" value="Web Developer" required>
+                      
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <button type="submit" class="btn btn-sm btn-primary">Update Employee Details</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Edit Details model-->
+
+        <!--Delete Modal-->
+        
+        <div class="modal fade" id="employee_delete" tabindex="-1" aria-labelledby="employee_delete" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="employee_delete">User Deletion Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Confirm that you want to delete this user
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                <button type="button" class="btn btn-primary">Cancel</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--Delete Modal-->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
