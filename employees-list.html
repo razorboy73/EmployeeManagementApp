@@ -66,7 +66,7 @@
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
-                    <td><a href="#" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail1" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
                     <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
                     <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
@@ -74,7 +74,7 @@
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
-                    <td><a href="#" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
                     <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
                     <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
@@ -82,7 +82,7 @@
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
-                    <td><a href="#" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
                     <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
                     <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
@@ -90,7 +90,7 @@
                     <td>1</td>
                     <td>John Doe</td>
                     <td>johndoe@gmail.com</td>
-                    <td><a href="#" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
                     <td><a href="#" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
                     <td><a href="#" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
@@ -105,7 +105,7 @@
     <!--Dashboard End-->
    
 
-  <!-- Modal -->
+  <!-- Registration Modal -->
         <div class="modal fade" id="add_employee" tabindex="-1" aria-labelledby="add_employee" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
@@ -143,6 +143,45 @@
             </div>
             </div>
         </div>
+        <!-- Details model-->
+        <div class="modal fade" id="employee_detail1" tabindex="-1" aria-labelledby="employee_detail1" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="employee_detail1">Employee Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+               <table class="table table-bordered">
+                   <tr>
+                       <th>ID</th>
+                       <td>1</td>
+                   </tr>
+                   <tr>
+                    <th>Name</th>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <th>Email Address</th>
+                    <td>Johndoe@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Start Date</th>
+                    <td>February, 8 2021</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>312-444-3433</td>
+                </tr>
+                <tr>
+                    <th>Job Title</th>
+                    <td>Web Developer</td>
+                </tr>
+               </table>
+                
+            </div>
+            </div>
+        </div>
+        <!-- Details model-->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
