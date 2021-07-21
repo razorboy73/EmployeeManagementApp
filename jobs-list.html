@@ -46,7 +46,7 @@
             <div class="col-lg-3 col-md-3">
                 <div class="list-group small">
                     <div class="list-group-item active">Job Data</div>
-                    <a href="" class="list-group-item" data-bs-toggle="modal" data-bs-target="#add_employee">Add New Job</a>
+                    <a href="" class="list-group-item" data-bs-toggle="modal" data-bs-target="#add_job">Add New Job</a>
                   
 
                     <a href="jobs-list.html" class="list-group-item">View All Jobs</a>
@@ -66,8 +66,8 @@
                     <td>1</td>
                     <td>Graphic Designer</td>
             
-                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_detail1" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
-                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_edit_detail1" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#job_detail1" class="btn btn-sm btn-info btn-block d-grid gap-2">Details</a></td>
+                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#job_edit_detail1" class="btn btn-sm btn-warning btn-block d-grid gap-2">Edit</a></td>
                     <td><a href="#" data-bs-toggle="modal" data-bs-target="#employee_delete" class="btn btn-sm btn-danger btn-block d-grid gap-2">Delete</a></td>
                 </tr>
                 <tr>
@@ -105,12 +105,12 @@
     <!--Dashboard End-->
    
 
-  <!-- Registration Modal -->
-        <div class="modal fade" id="add_employee" tabindex="-1" aria-labelledby="add_employee" aria-hidden="true">
+  <!-- Add Job Modal -->
+        <div class="modal fade" id="add_job" tabindex="-1" aria-labelledby="add_job" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Employee Details</h5>
+                <h5 class="modal-title" id="add_job">Add Job Details</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -119,23 +119,11 @@
                             <input type="date" class="form-control form-control-sm" placeholder="Start Date" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control form-control-sm" placeholder="Employee Name" required>
+                            <input type="text" class="form-control form-control-sm" placeholder="Job Name" required>
                         </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control form-control-sm" placeholder="Email Address" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" class="form-control form-control-sm" placeholder="Employee Phone" required>
-                        </div>
-                        <div class="mb-3">
-                            <select class ="form-control form-control-sm" name="" id="">
-                                <option value="Graphic Designer">Graphic Designer</option>
-                                <option value="Web Designer">Web Designer</option>
-                                <option value="Web Developer">Web Developer</option>
-                            </select>
-                        </div>
+                        
                         <div class="mb-3 d-grid gap-2">
-                            <button type="submit" class="btn btn-sm btn-primary">Add New Employee</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Add New Job</button>
                         </div>
                       </form>
                 </div>
@@ -145,11 +133,11 @@
         </div>
        
          <!-- Details model-->
-        <div class="modal fade" id="employee_detail1" tabindex="-1" aria-labelledby="employee_detail1" aria-hidden="true">
+        <div class="modal fade" id="job_detail1" tabindex="-1" aria-labelledby="job_detail1" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="employee_detail1">Employee Details</h5>
+                <h5 class="modal-title" id="job_detail1">Job Details</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                <table class="table table-bordered">
@@ -158,25 +146,15 @@
                        <td>1</td>
                    </tr>
                    <tr>
-                    <th>Name</th>
-                    <td>John Doe</td>
+                    <th>Job Title</th>
+                    <td>Graphic Designer</td>
                 </tr>
-                <tr>
-                    <th>Email Address</th>
-                    <td>Johndoe@gmail.com</td>
-                </tr>
+            
                 <tr>
                     <th>Start Date</th>
                     <td>February, 8 2021</td>
                 </tr>
-                <tr>
-                    <th>Phone</th>
-                    <td>312-444-3433</td>
-                </tr>
-                <tr>
-                    <th>Job Title</th>
-                    <td>Web Developer</td>
-                </tr>
+                
                </table>
                 
             </div>
@@ -184,11 +162,11 @@
         </div>
         <!-- Details modal-->
         <!-- Edit Employee details modal-->
-        <div class="modal fade" id="employee_edit_detail1" tabindex="-1" aria-labelledby="employee_edit_detail1" aria-hidden="true">
+        <div class="modal fade" id="job_edit_detail1" tabindex="-1" aria-labelledby="job_edit_detail1" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="employee_edit_detail1">Employee Details</h5>
+                <h5 class="modal-title" id="job_edit_detail1">Edit Job Details</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -197,20 +175,11 @@
                         <input type="text" class="form-control form-control-sm" value="02-08-2021" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" value="John Doe" required>
+                        <input type="text" class="form-control form-control-sm" value="Graphic Designer" required>
                     </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control form-control-sm" value="JohnDoe@gmail.com" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="tel" class="form-control form-control-sm" value="1233454567" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" value="Web Developer" required>
-                      
-                    </div>
+
                     <div class="mb-3 d-grid gap-2">
-                        <button type="submit" class="btn btn-sm btn-primary">Update Employee Details</button>
+                        <button type="submit" class="btn btn-sm btn-primary">Update Job Details</button>
                     </div>
                   </form>
                 </div>
@@ -225,11 +194,11 @@
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="employee_delete">User Deletion Confirmation</h5>
+                <h5 class="modal-title" id="employee_delete">Job Deletion Confirmation</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                Confirm that you want to delete this user
+                Confirm that you want to delete this job.
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
